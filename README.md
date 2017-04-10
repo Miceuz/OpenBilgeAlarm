@@ -23,3 +23,19 @@ So the furthest sensor should have something like 45m cable at max.
 The ship runs on 24V DC batteries, which are charged and maintained externally. There is also a 220V AC inverter, but I prefer using the 24V DC and have a little converter for our needs. The maximum voltage we may have to consider is 29V in cases of charging with the generator. The minimum can get as low as 22.5V in case we are running really low on voltage.
 
 But having a backup-battery will be a good idea anyways in case anything goes wrong with the other supplies?
+
+## System architecture
+
+ * A network of sensors is deployed on RS485 transport
+ * [RS485-based soil moisture sensor](https://github.com/Miceuz/rs485-moist-sensor) is used
+ * Central control system with user interface
+
+### User interface
+
+ * 2x16 character LCD
+ * Rotary encoder w push button
+ * Bright red alarm led
+ * Multicolor status led
+ * Buzzer
+ * "Silence" button
+
