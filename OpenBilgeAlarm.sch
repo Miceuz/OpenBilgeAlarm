@@ -1,0 +1,191 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:shield_arduino
+LIBS:switches
+LIBS:OpenBilgeAlarm-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp "Albertas Mickėnas"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_NANO SH?
+U 1 1 58EB4408
+P 4600 4150
+F 0 "SH?" H 4600 5287 60  0000 C CNN
+F 1 "ARDUINO_NANO" H 4600 5181 60  0000 C CNN
+F 2 "" H 3675 3550 60  0000 C CNN
+F 3 "" H 3675 3550 60  0000 C CNN
+	1    4600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD16X2 DS?
+U 1 1 58EB44CC
+P 9750 6400
+F 0 "DS?" H 8872 6272 50  0000 R CNN
+F 1 "LCD16X2" H 8872 6363 50  0000 R CNN
+F 2 "WC1602A" H 9750 6350 50  0001 C CIN
+F 3 "" H 9750 6400 50  0001 C CNN
+	1    9750 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74HC595 U?
+U 1 1 58EB4555
+P 7750 4200
+F 0 "U?" H 7750 4966 50  0000 C CNN
+F 1 "74HC595" H 7750 4875 50  0000 C CNN
+F 2 "" H 7750 4200 50  0001 C CNN
+F 3 "" H 7750 4200 50  0001 C CNN
+	1    7750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Rotary_Encoder_Switch SW?
+U 1 1 58EB45E1
+P 7500 6600
+F 0 "SW?" H 7500 6967 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 7500 6876 50  0000 C CNN
+F 2 "" H 7400 6760 50  0001 C CNN
+F 3 "" H 7500 6860 50  0001 C CNN
+	1    7500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Speaker_Crystal LS?
+U 1 1 58EB4717
+P 1650 6200
+F 0 "LS?" H 1825 6196 50  0000 L CNN
+F 1 "Speaker_Crystal" H 1825 6105 50  0000 L CNN
+F 2 "" H 1615 6150 50  0001 C CNN
+F 3 "" H 1615 6150 50  0001 C CNN
+	1    1650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 58EB4803
+P 1400 4600
+F 0 "BT?" H 1518 4696 50  0000 L CNN
+F 1 "Battery_Cell" H 1518 4605 50  0000 L CNN
+F 2 "" V 1400 4660 50  0001 C CNN
+F 3 "" V 1400 4660 50  0001 C CNN
+	1    1400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58EB48CA
+P 3200 6050
+F 0 "D?" H 3191 6266 50  0000 C CNN
+F 1 "LED" H 3191 6175 50  0000 C CNN
+F 2 "" H 3200 6050 50  0001 C CNN
+F 3 "" H 3200 6050 50  0001 C CNN
+	1    3200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D?
+U 1 1 58EB49A3
+P 4300 6300
+F 0 "D?" H 4300 6797 50  0000 C CNN
+F 1 "LED_ARGB" H 4300 6706 50  0000 C CNN
+F 2 "" H 4300 6250 50  0001 C CNN
+F 3 "" H 4300 6250 50  0001 C CNN
+	1    4300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SP3481CN U?
+U 1 1 58EB4A66
+P 2450 3200
+F 0 "U?" H 2450 3778 50  0000 C CNN
+F 1 "SP3481CN" H 2450 3687 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3500 2850 50  0001 C CIN
+F 3 "" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 58EB4F3A
+P 6050 6650
+F 0 "SW?" H 6050 6885 50  0000 C CNN
+F 1 "SW_SPST" H 6050 6794 50  0000 C CNN
+F 2 "" H 6050 6650 50  0001 C CNN
+F 3 "" H 6050 6650 50  0001 C CNN
+	1    6050 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U?
+U 1 1 58EB52D9
+P 4050 1100
+F 0 "U?" H 4050 1415 50  0000 C CNN
+F 1 "7805" H 4050 1324 50  0000 C CNN
+F 2 "" H 4050 1100 50  0001 C CNN
+F 3 "" H 4050 1100 50  0001 C CNN
+	1    4050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U?
+U 1 1 58EB53F0
+P 5700 1100
+F 0 "U?" H 5700 1415 50  0000 C CNN
+F 1 "7805" H 5700 1324 50  0000 C CNN
+F 2 "" H 5700 1100 50  0001 C CNN
+F 3 "" H 5700 1100 50  0001 C CNN
+	1    5700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 58EB54DF
+P 2100 1150
+F 0 "Q?" V 2443 1150 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2352 1150 50  0000 C CNN
+F 2 "" H 2300 1250 50  0001 C CNN
+F 3 "" H 2100 1150 50  0001 C CNN
+	1    2100 1150
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
